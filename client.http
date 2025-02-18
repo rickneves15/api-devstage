@@ -1,0 +1,14 @@
+@host = localhost:3333
+
+### Subscribe to event
+POST http://{{host}}/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Invited",
+  "email": "ricknevesbc@hotmail.com",
+  "referrer": "3cc72c15-34b5-4933-b6bf-854ac97dd60d"
+}
+
+### Access invite link
+GET http://{{host}}/invites/5dbaf233-0799-4060-96ca-8b7fdfb80678
