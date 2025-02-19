@@ -1,14 +1,26 @@
 @host = localhost:3333
 
+### Access invite link
+GET http://{{host}}/invites/5dbaf233-0799-4060-96ca-8b7fdfb80678
+
+### Get subscriber invites clicks
+GET http://{{host}}/subscribers/5dbaf233-0799-4060-96ca-8b7fdfb80678/ranking/clicks
+
+### Get subscriber invites count
+GET http://{{host}}/subscribers/5dbaf233-0799-4060-96ca-8b7fdfb80678/ranking/count
+
+### Get subscriber ranking position
+GET http://{{host}}/subscribers/5dbaf233-0799-4060-96ca-8b7fdfb80678/ranking/position
+
+### Get ranking
+GET http://{{host}}/ranking
+
 ### Subscribe to event
 POST http://{{host}}/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Invited",
-  "email": "ricknevesbc@hotmail.com",
-  "referrer": "3cc72c15-34b5-4933-b6bf-854ac97dd60d"
+  "name": "Invited23",
+  "email": "ricknevesbc23@hotmail.com",
+  "referrer": "5dbaf233-0799-4060-96ca-8b7fdfb80678"
 }
-
-### Access invite link
-GET http://{{host}}/invites/5dbaf233-0799-4060-96ca-8b7fdfb80678
