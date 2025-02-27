@@ -24,3 +24,12 @@ Content-Type: application/json
   "email": "ricknevesbc23@hotmail.com",
   "referrer": "5dbaf233-0799-4060-96ca-8b7fdfb80678"
 }
+
+### Send messages to AI
+POST http://{{host}}/messages
+Content-Type: application/json
+
+{
+  "message": "Me retorne o e-mail e o número de indicações de cada usuários da minha aplicação?"
+}
+

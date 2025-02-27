@@ -13,6 +13,8 @@ const envSchema = z.object({
   // URLs
   API_URL: z.string().url(),
   WEB_URL: z.string().url(),
+
+  GOOGLE_GENERATIVE_AI_API_KEY : z.string(),
 })
 
 export const env = envSchema.parse(process.env)
